@@ -1,0 +1,14 @@
+{
+  "conversation_id": "cv_0013",
+  "tool_calls": [],
+  "terminal_state": "abandoned",
+  "escalation_reason": null,
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Namaste, Sunrise Clinic mein aapka swagat hai. Kya main aapki koi madad kar sakti hoon?",
+  "metrics": {
+    "turns": 3,
+    "tokens": 550,
+    "latency_ms": 1047
+  }
+}

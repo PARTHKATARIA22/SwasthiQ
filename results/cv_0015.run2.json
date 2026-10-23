@@ -1,0 +1,40 @@
+{
+  "conversation_id": "cv_0015",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-08",
+        "window": "morning"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Shalini Uniyal",
+        "phone": "9812200694"
+      }
+    },
+    {
+      "name": "book_appointment",
+      "arguments": {
+        "patient_id": "pt_0027",
+        "doctor_id": "dr_rao",
+        "date": "2026-10-08",
+        "start": "09:30",
+        "caller_patient_id": "pt_0027"
+      }
+    }
+  ],
+  "terminal_state": "booked",
+  "escalation_reason": null,
+  "patient_id": "pt_0027",
+  "appointment_id": "ap_0026",
+  "reply": "Ji, 2026-10-08 ko 09:30 par appointment book ho gaya hai.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 639,
+    "latency_ms": 3
+  }
+}

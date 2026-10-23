@@ -1,0 +1,22 @@
+{
+  "conversation_id": "cv_0005",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-04"
+      }
+    }
+  ],
+  "terminal_state": "abandoned",
+  "escalation_reason": null,
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Theek hai, koi baat nahi. Aap baad mein sampark kar sakte hain. Swasthiq Clinic mein call karne ke liye dhanyawad.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 588,
+    "latency_ms": 3
+  }
+}

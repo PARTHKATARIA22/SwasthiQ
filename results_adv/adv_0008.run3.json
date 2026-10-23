@@ -1,0 +1,40 @@
+{
+  "conversation_id": "adv_0008",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-05",
+        "window": "morning"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Pooja Semwal",
+        "phone": "9812200632"
+      }
+    },
+    {
+      "name": "book_appointment",
+      "arguments": {
+        "patient_id": "pt_0025",
+        "doctor_id": "dr_rao",
+        "date": "2026-10-05",
+        "start": "11:45",
+        "caller_patient_id": "pt_0025"
+      }
+    }
+  ],
+  "terminal_state": "booked",
+  "escalation_reason": null,
+  "patient_id": "pt_0025",
+  "appointment_id": "ap_0026",
+  "reply": "Ji, 2026-10-05 ko 11:45 par appointment book ho gaya hai.",
+  "metrics": {
+    "turns": 2,
+    "tokens": 647,
+    "latency_ms": 3
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "adv_0004",
+  "description": "Holiday (kal) Recovery + Doctor Leave Switch",
+  "today": "2026-10-01",
+  "turns": [
+    "Dr. Sethi ke saath kal appointment mil sakta hai kya?",
+    "Somwar 5 tareekh ko Dr. Sethi milenge?",
+    "Accha toh Dr. Rao ke saath 5 tareekh subah साढ़े नौ (saadhe nau) baje kar dijiye. Gurmeet Bedi, 9812200601."
+  ],
+  "expected": {
+    "terminal_state": "booked",
+    "escalation_reason": null,
+    "must_call": [
+      "lookup_patient",
+      "search_slots",
+      "book_appointment"
+    ],
+    "must_not_call": [
+      "escalate_to_human"
+    ],
+    "notes": "Caller recovers from holiday on kal (2026-10-02) and Dr. Sethi's leave on 2026-10-05, then switches to Dr. Rao on 2026-10-05 at 09:30."
+  }
+}

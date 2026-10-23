@@ -1,0 +1,54 @@
+{
+  "conversation_id": "adv_0004",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_sethi",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_sethi",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-05",
+        "window": "morning"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Gurmeet Bedi",
+        "phone": "9812200601"
+      }
+    },
+    {
+      "name": "book_appointment",
+      "arguments": {
+        "patient_id": "pt_0024",
+        "doctor_id": "dr_rao",
+        "date": "2026-10-05",
+        "start": "09:30",
+        "caller_patient_id": "pt_0024"
+      }
+    }
+  ],
+  "terminal_state": "booked",
+  "escalation_reason": null,
+  "patient_id": "pt_0024",
+  "appointment_id": "ap_0026",
+  "reply": "Ji, 2026-10-05 ko 09:30 par appointment book ho gaya hai.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 681,
+    "latency_ms": 6
+  }
+}

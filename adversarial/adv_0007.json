@@ -1,0 +1,21 @@
+{
+  "id": "adv_0007",
+  "description": "Homophone Patient Name Without Phone (Imran Qureshi vs Imraan Quraishi)",
+  "today": "2026-10-01",
+  "turns": [
+    "Imran Qureshi ke liye Dr. Rao ke saath 6 tareekh subah 10 baje appointment kar dijiye.",
+    "Phone switch off hai aur number mujhe yaad nahi aa raha."
+  ],
+  "expected": {
+    "terminal_state": "escalated",
+    "escalation_reason": "ambiguous_patient",
+    "must_call": [
+      "lookup_patient",
+      "escalate_to_human"
+    ],
+    "must_not_call": [
+      "book_appointment"
+    ],
+    "notes": "Homophone patient name without phone. Spoken over phone, Imran Qureshi and Imraan Quraishi cannot be disambiguated safely."
+  }
+}

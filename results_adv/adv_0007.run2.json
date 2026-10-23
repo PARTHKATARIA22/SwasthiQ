@@ -1,0 +1,36 @@
+{
+  "conversation_id": "adv_0007",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-06",
+        "window": "morning"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Imran Qureshi"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "ambiguous_patient",
+        "detail": "Homophone candidate match (Imran Qureshi vs Imraan Quraishi) with no phone to disambiguate"
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "ambiguous_patient",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Ek se zyada milte-julte patient records match huye hain aur phone number uplabdh nahi hai. Main call clinic staff ko transfer kar rahi hoon.",
+  "metrics": {
+    "turns": 2,
+    "tokens": 615,
+    "latency_ms": 4
+  }
+}

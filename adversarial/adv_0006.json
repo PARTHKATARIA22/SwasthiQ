@@ -1,0 +1,21 @@
+{
+  "id": "adv_0006",
+  "description": "Window With No Schedule (Saturday Evening Trap) + Caller Abandons",
+  "today": "2026-10-01",
+  "turns": [
+    "Namaste, Dr. Rao ke paas Shanivaar 3 tareekh shaam ko 6 baje slot mil sakta hai? Vikas Dobhal, 9812200549.",
+    "Shaam ko hi aa sakta hoon, subah office hota hai. Chaliye rehne dijiye phir."
+  ],
+  "expected": {
+    "terminal_state": "abandoned",
+    "escalation_reason": null,
+    "must_call": [
+      "search_slots"
+    ],
+    "must_not_call": [
+      "book_appointment",
+      "escalate_to_human"
+    ],
+    "notes": "Caller asks for Saturday evening where no doctor has slots, and abandons. Must search slots for requested date/window and not book or escalate."
+  }
+}

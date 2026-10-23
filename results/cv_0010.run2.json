@@ -1,0 +1,22 @@
+{
+  "conversation_id": "cv_0010",
+  "tool_calls": [
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "medical_advice",
+        "detail": "Caller requested clinical judgement or medication advice: Do din se bukhar hai, main Crocin le raha hoon."
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "medical_advice",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Main front desk assistant hoon aur dawai ya dosage ke baare mein clinical advice nahi de sakti. Main aapki baat clinic ke doctor se karwa deti hoon.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 577,
+    "latency_ms": 1
+  }
+}

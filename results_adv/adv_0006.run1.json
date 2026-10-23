@@ -1,0 +1,30 @@
+{
+  "conversation_id": "adv_0006",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-03",
+        "window": "evening"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Vikas Dobhal",
+        "phone": "9812200549"
+      }
+    }
+  ],
+  "terminal_state": "abandoned",
+  "escalation_reason": null,
+  "patient_id": "pt_0022",
+  "appointment_id": null,
+  "reply": "Theek hai, koi baat nahi. Aap baad mein sampark kar sakte hain. Swasthiq Clinic mein call karne ke liye dhanyawad.",
+  "metrics": {
+    "turns": 2,
+    "tokens": 642,
+    "latency_ms": 1100
+  }
+}

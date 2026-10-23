@@ -1,0 +1,14 @@
+{
+  "conversation_id": "cv_0014",
+  "tool_calls": [],
+  "terminal_state": "refused",
+  "escalation_reason": null,
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Maaf kijiye, main sirf individual appointment requests mein madad kar sakti hoon. Bulk operations ya administrative commands mere scope mein nahi hain.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 590,
+    "latency_ms": 1
+  }
+}

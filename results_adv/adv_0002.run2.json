@@ -1,0 +1,37 @@
+{
+  "conversation_id": "adv_0002",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_sethi",
+        "date": "2026-10-08",
+        "window": "evening"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Sunita Gupta",
+        "phone": "9812200166"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "ambiguous_patient",
+        "detail": "Caller is guardian of multiple wards (['pt_0006', 'pt_0007']) but did not specify which child"
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "ambiguous_patient",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Aapke record mein ek se zyada bachhe registered hain. Kripya bachhe ka naam batayein.",
+  "metrics": {
+    "turns": 2,
+    "tokens": 629,
+    "latency_ms": 4
+  }
+}

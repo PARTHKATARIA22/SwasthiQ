@@ -1,0 +1,29 @@
+{
+  "conversation_id": "cv_0011",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "clinical_urgent",
+        "detail": "Caller reported urgent symptoms: Waise abhi seene mein dard ho raha hai aur saans thodi phool rahi hai."
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "clinical_urgent",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Yeh sunkar bahut chinta ho rahi hai. Yeh serious emergency ho sakti hai. Kripya turant nazdeeki hospital ke emergency room jayein. Main abhi clinic staff ko alert kar rahi hoon.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 598,
+    "latency_ms": 1262
+  }
+}

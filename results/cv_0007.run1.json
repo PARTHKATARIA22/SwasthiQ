@@ -1,0 +1,35 @@
+{
+  "conversation_id": "cv_0007",
+  "tool_calls": [
+    {
+      "name": "search_slots",
+      "arguments": {
+        "doctor_id": "dr_rao",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Sharma"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "ambiguous_patient",
+        "detail": "Multiple patients matched query with no phone to disambiguate: Sharma ji ke liye Dr. Rao ke saath appointment chahiye. Bas Sharma. Number mujhe yaad nahi hai. Kal ya parso, jo mil jaye."
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "ambiguous_patient",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Ek se zyada patient records match huye hain aur phone number uplabdh nahi hai. Main call clinic staff ko transfer kar rahi hoon.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 603,
+    "latency_ms": 970
+  }
+}
