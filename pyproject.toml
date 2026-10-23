@@ -1,0 +1,16 @@
+[project]
+name = "swasthiq-agent"
+version = "1.0.0"
+description = "SwasthiQ Clinic Front Desk Agent"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "google-genai",
+    "openai",
+    "groq",
+    "pydantic"
+]
+
+[tool.vercel]
+entrypoint = "backend.app:app"
